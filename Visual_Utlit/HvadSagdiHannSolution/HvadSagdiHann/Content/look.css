@@ -1,0 +1,74 @@
+﻿/*Upphafssida*/
+body {
+    font-family: 'Calibri';
+}
+
+form{
+    font-size: 16pt;
+    text-align: center;
+}
+
+nav{
+    font-size: 14pt;
+    text-align: center;
+    font-weight: bold;
+}
+
+.nav navbar-nav{
+    margin-left: 20%;
+}
+
+/*Um okkur*/
+.resize {
+    width: 18%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2{
+   font-weight: bold;
+   color: #00fbb3;
+   text-align: center;
+}
+
+h3{
+    font-size: 12pt;
+    color: #666666;
+}
+
+.about{
+    margin-top: -50%;
+    margin-left: 65%;
+}
+
+.pic{
+    margin-left: 10%;
+}
+
+.teacher{
+    margin-bottom: 30%;
+}
+
+.email{
+    font-style: italic;
+}
+
+/*Register*/
+.formInput{
+    margin-left: 28%;
+}
+
+/*Login*/
+#loginForm{
+     margin-left: 28%;
+}
+
+h4{
+    text-align:center;
+}
+
+.checkbox{
+    font-size: 11pt;
+}
+
