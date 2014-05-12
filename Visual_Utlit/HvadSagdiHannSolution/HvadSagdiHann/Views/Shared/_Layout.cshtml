@@ -25,13 +25,19 @@
         </div>
     </div>
     <div id="logo">
-        <img id="logo" src="http://oi61.tinypic.com/14ajsyc.jpg" alt="IMG NOT FOUND" />
+        <img id="logo" src="~/Img/imgtemp/logo.jpg" alt="Logo" /> 
     </div>
     <div class="container body-content">
         @RenderBody()
         <hr />
+        <img id="footerBanner" src="~/Img/imgtemp/longBanner.jpg" alt="Banner for footer" />
+        <br />
+        <br />
+        <br />
+        <br />
         <footer>
             <p>&copy; @DateTime.Now.Year - Tísurnar MjáMjá</p>
+                @Html.ActionLink("Hafa samband", "About", "Home") 
         </footer>
     </div>
 

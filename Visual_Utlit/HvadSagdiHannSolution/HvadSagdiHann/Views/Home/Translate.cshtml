@@ -1,14 +1,16 @@
-﻿@{
+﻿<link href="~/Content/look.css" rel="stylesheet" />
+<script src="~/Scripts/changeMedia.js"></script>
+@{
     ViewBag.Title = "Translate";
 }
 <h2>Þýða</h2>
 <h3>@ViewBag.Message</h3>
-
-<p>Fylltu inn í formið að neðan til að senda inn nýja þýðingu</p>
-<form>
-    <input type="radio" id="mov" name="type" value="mov" />
+<hr />
+<form class="trForm">
+    <p>Fylltu inn í formið að neðan til að senda inn nýja þýðingu</p>
+    <input type="radio" id="mov" name="type" value="mov" checked onclick="TvHide()" />
     <label for="mov">Kvikmynd</label>
-    <input type="radio" id="tv" name="type" value="tv" />
+    <input type="radio" id="tv" name="type" value="tv" onclick="TvShow()"/>
     <label for="tv">Þáttur</label>
     <br />
     <input type="checkbox" name="genre" value="action" /> Hasar
@@ -18,21 +20,18 @@
     <input type="checkbox" name="genre" value="thriller" /> Hryllir
     <input type="checkbox" name="genre" value="romance" /> Rómantík <br />
 
-    <label>Titill: </label><input type="text" /> <br />
-    <label>IMDb (valmöguleiki): </label><input type="text" /><br />
+    <input type="text" placeholder="Titill"/> <br />
+    <input type="text" placeholder="IMDb - Valmöguleiki"/><br />
+    <span class="tvOnly" style="display:none">
+        <input type="text" size="7" placeholder=" Sería" />
+        <input type="text" size="7" placeholder=" Þáttur" /> <br />
+    </span>
     <input type="radio" id="ice" name="lang" value="ice" />
-    <label for="ice">Íslenska</label>
+    <label for="ice" id="labIce">Íslenska</label>
     <input type="radio" id="eng" name="lang" value="eng" />
     <label for="eng">Enska</label>
-    <input type="radio" id="other" name="lang" value="other" />
-    <select>
-        <option value="sel" selected="selected">Annað</option>
-        <option value="dan">Danska</option>
-        <option value="fre">Franska</option>
-        <option value="ger">Þýska</option>
-        <option value="spa">Spænska</option>
-    </select>
     <br />
-    <button>Skrá</button>
-    <button>Hætta við</button>
+    <a href="#" id="subCan" class="cancel">Skrá</a> <!--Þetta er prufa-->
+    <a href="#" id="subCan" class="cancel"<%= Html.ActionLink("Heim", "Index", "Home") %>Hætta við</a> <!--Þetta er prufa-->
 </form>
+

@@ -18,6 +18,33 @@ nav{
     margin-left: 20%;
 }
 
+/*Beiðnir*/
+.trForm{
+    margin-bottom: 15pt;
+}
+
+#optional{
+    text-align: center;
+    color: red;
+}
+
+input{
+    margin: 10px;
+}
+
+#subCan{
+    margin: 10px;
+}
+
+#labIce{
+    margin-right: 10px;
+}
+
+/*Þýða*/
+.reqForm{
+    margin-bottom: 15pt;
+}
+
 /*Um okkur*/
 .resize {
     width: 18%;
@@ -28,7 +55,7 @@ nav{
 
 h2{
    font-weight: bold;
-   color: #00fbb3;
+   color: #666666;
    text-align: center;
 }
 
@@ -38,25 +65,32 @@ h3{
 }
 
 .about{
-    margin-top: -50%;
-    margin-left: 65%;
+    text-align: center;
 }
 
 .pic{
-    margin-left: 10%;
+    text-align: center;
 }
 
-.teacher{
-    margin-bottom: 30%;
+a:link{
+    color: #666666;
 }
 
-.email{
-    font-style: italic;
+a:hover{
+    color: #00FBB3;
 }
 
 /*Register*/
 .formInput{
     margin-left: 28%;
+}
+
+a.new{
+    color: #666666;
+}
+
+a.new:hover{
+    color: #00FBB3;
 }
 
 /*Login*/
@@ -72,3 +106,78 @@ h4{
     font-size: 11pt;
 }
 
+p{
+    font-size: 11pt;
+}
+
+/*Footer*/
+a{
+    color: #666666;
+}
+
+footer{
+    text-align: right;
+}
+
+#footerBanner{
+    position: absolute;
+    margin-left: -10%; 
+    height: 10%;
+    width: 100%;
+}
+/*
+#banner{
+    background-repeat:repeat-X;
+    background-image:url('~/Img/imgtemp/banner.jpg');
+    width:10%;
+}*/
+
+
+
+/*Þetta er líka prufa
+    Takkarnir */
+
+.cancel {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ebebeb), color-stop(1, #ebebeb) );
+	background:-moz-linear-gradient( center top, #ebebeb 5%, #ebebeb 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebebeb', endColorstr='#ebebeb');
+	background-color:#ebebeb;
+	-webkit-border-top-left-radius:37px;
+	-moz-border-radius-topleft:37px;
+	border-top-left-radius:37px;
+	-webkit-border-top-right-radius:0px;
+	-moz-border-radius-topright:0px;
+	border-top-right-radius:0px;
+	-webkit-border-bottom-right-radius:37px;
+	-moz-border-radius-bottomright:37px;
+	border-bottom-right-radius:37px;
+	-webkit-border-bottom-left-radius:0px;
+	-moz-border-radius-bottomleft:0px;
+	border-bottom-left-radius:0px;
+	text-indent:0;
+	border:1px solid #00fbb4;
+	display:inline-block;
+	color:#676795;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:40px;
+	line-height:40px;
+	width:100px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #ffffff;
+}
+.cancel:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ebebeb), color-stop(1, #ebebeb) );
+	background:-moz-linear-gradient( center top, #ebebeb 5%, #ebebeb 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebebeb', endColorstr='#ebebeb');
+	background-color:#ebebeb;
+}.cancel:active {
+	position:relative;
+	top:1px;
+}

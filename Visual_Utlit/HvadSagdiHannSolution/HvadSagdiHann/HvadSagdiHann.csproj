@@ -172,12 +172,15 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\look.css" />
+    <Content Include="Img\imgtemp\banner.jpg" />
+    <Content Include="Img\imgtemp\logo.jpg" />
+    <Content Include="Img\imgtemp\longBanner.jpg" />
+    <Content Include="Scripts\changeMedia.js" />
     <Content Include="Scripts\favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Img\fotur.jpg" />
-    <Content Include="Img\Logo.jpg" />
     <Content Include="Img\imgtemp\hreinnkjanu.jpg" />
     <Content Include="Img\imgtemp\ingalinga.jpg" />
     <Content Include="Img\imgtemp\kristinn.jpg" />
