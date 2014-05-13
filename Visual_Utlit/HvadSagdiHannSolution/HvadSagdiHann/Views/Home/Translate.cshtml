@@ -27,7 +27,7 @@
     <label for="eng">Enska</label>
     <br />
     <a href="#" id="subCan" class="cancel">Skrá</a> <!--Þetta er prufa-->
-    <button id="cancel">@Html.ActionLink("Hætta við", "Index", "Home")</button>
+    <a href="@Url.Action("Index", "Home")" id="subCan" class="cancel" >Hætta við</a>
 
-    <!--<a href="#" id="subCan" class="cancel">Hætta við</a>--> <!--Þetta er prufa-->
+    <!--<a href="#" id="subCan" class="cancel"@Html.ActionLink("Hætta við", "Index", "Home")/>Hætta við</a>--> <!--Þetta er prufa-->
 </form>
