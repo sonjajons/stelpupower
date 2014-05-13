@@ -5,7 +5,7 @@
 <h3 style="text-align: center">VELKOMINN Á SÍÐUNA OKKAR KNÚS</h3> <!--BREYTA-->
 <hr />
 <form>
-    <br />
+    <h4>Leita að skjátextaþýðingum</h4>
     <input type="radio" id="all" name="type" value="all" />
     <label for="all">Allt</label>
     <input type="radio" id="mov" name="type" value="mov" />
@@ -13,17 +13,13 @@
     <input type="radio" id="tv" name="type" value="tv" />
     <label for="tv">Þáttur</label>
     <br />
-    <input type="checkbox" name="genre" value="hasar" /> Hasar
-    <input type="checkbox" name="genre" value="gaman" /> Gaman
-    <input type="checkbox" name="genre" value="barna" /> Barnaefni <br />
-    <input type="checkbox" name="genre" value="drama" /> Drama
-    <input type="checkbox" name="genre" value="hryllir" /> Hryllir
-    <input type="checkbox" name="genre" value="romo" /> Rómantík <br />
-    <br />
+
     <input type="search" name="search" placeholder=" Leita" size="100"/>
 </form>
-
+@Html.Hidden("RedirectTo", Url.Action("Index", "Home"));
 <!--
+    <img id="line" src="http://oi58.tinypic.com/25jfms0.jpg" style="display: block; margin-left: auto; margin-right: auto" />
+
 <div class="jumbotron">
     <h1>ASP.NET</h1>
     <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>

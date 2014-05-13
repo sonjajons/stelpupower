@@ -4,21 +4,15 @@
     ViewBag.Title = "Translate";
 }
 <h2>Þýða</h2>
-<h3>@ViewBag.Message</h3>
+<h3>Skjátexta þýðingar</h3>
 <hr />
 <form class="trForm">
-    <p>Fylltu inn í formið að neðan til að senda inn nýja þýðingu</p>
+    <h4>Fylltu inn í formið að neðan til að senda inn nýja þýðingu</h4>
     <input type="radio" id="mov" name="type" value="mov" checked onclick="TvHide()" />
     <label for="mov">Kvikmynd</label>
     <input type="radio" id="tv" name="type" value="tv" onclick="TvShow()"/>
     <label for="tv">Þáttur</label>
     <br />
-    <input type="checkbox" name="genre" value="action" /> Hasar
-    <input type="checkbox" name="genre" value="comedy" /> Gaman
-    <input type="checkbox" name="genre" value="cartoon" /> Barnaefni <br />
-    <input type="checkbox" name="genre" value="drama" /> Drama
-    <input type="checkbox" name="genre" value="thriller" /> Hryllir
-    <input type="checkbox" name="genre" value="romance" /> Rómantík <br />
 
     <input type="text" placeholder="Titill"/> <br />
     <input type="text" placeholder="IMDb - Valmöguleiki"/><br />
@@ -26,12 +20,14 @@
         <input type="text" size="7" placeholder=" Sería" />
         <input type="text" size="7" placeholder=" Þáttur" /> <br />
     </span>
+    
     <input type="radio" id="ice" name="lang" value="ice" />
     <label for="ice" id="labIce">Íslenska</label>
     <input type="radio" id="eng" name="lang" value="eng" />
     <label for="eng">Enska</label>
     <br />
     <a href="#" id="subCan" class="cancel">Skrá</a> <!--Þetta er prufa-->
-    <a href="#" id="subCan" class="cancel"<%= Html.ActionLink("Heim", "Index", "Home") %>Hætta við</a> <!--Þetta er prufa-->
-</form>
+    <button id="cancel">@Html.ActionLink("Hætta við", "Index", "Home")</button>
 
+    <!--<a href="#" id="subCan" class="cancel">Hætta við</a>--> <!--Þetta er prufa-->
+</form>

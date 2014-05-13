@@ -53,7 +53,7 @@ namespace HvadSagdiHann.Controllers
                 }
                 else
                 {
-                    ModelState.AddModelError("", "Invalid username or password.");
+                    ModelState.AddModelError("", "Ógilt notendanafn eða lykilorð.");
                 }
             }
 

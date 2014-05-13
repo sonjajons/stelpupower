@@ -25,7 +25,9 @@
         </div>
     </div>
     <div id="logo">
-        <img id="logo" src="~/Img/imgtemp/logo.jpg" alt="Logo" /> 
+        <a href="@Url.Action("Index", "Home")">
+            <img id="logo" src="@Url.Content("~/Img/imgtemp/logo.jpg")" alt="Logo" /> 
+        </a>
     </div>
     <div class="container body-content">
         @RenderBody()
